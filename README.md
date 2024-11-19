@@ -48,14 +48,16 @@ Para realizar esta practica debemos tener conocimientos es:
  Dentro de esta práctica vamos a comenzar levantando los contenedores y la red que ya los tenemos creados con el achivo yml, recordando que uno de los contenedores es de postgres, para la base de datos y otro de pgadmin que la va a consumir.
     ![](/imagenesback/contenedores-y-redes.png)
  ### 8.2 Creación de artefacto jar
+ Una vez con los contenedores en ejecución y verificada la conexión correcta de la base de datos vamos a crear el artefacto .jar, este artefacto nos va a servir para poder contener en un archivo comprimido todos los archivos necesarios para la ejecución del proyecto de springboot que tenemos.
     ![](/imagenesback/aplication.png)
     ![](/imagenesback/build-succes.png)
     ![](/imagenesback/dockerfile.png)
  ### 8.3 Creación de imagen con springboot
+ Ahora con el archivo jar que contiene los documentos del proyecto vamos a colocarlo dentro de una imagen de docke para poder tener una mejor ejecución del proyecto.
     ![](/imagenesback/creacion-de-imagen.png)
  ### 8.4 Creación del ultimo contenedor
+ Para poder tener nuestro proyecto de springboot en un entorno aislado vamos a tener que crear un nuevo contenedor que va a tener dentro la imagen que creamos con el arhivo .jar del proyecto completo.
     ![](/imagenesback/todos-los-contenedores.png)
     ![](/imagenesback/vista-final.png)
 ## 9. Resultados esperados:
-    
-Con estos pasos y estos comandos logramos tener dos contenedores y una red con lo que podemos conectar estos dos contenedores mediante esta red que tenemos, cabe recalcar que todo esto se forma de manera local o en otras paabras solamente dentro de la computadora.
+ Siguiendo todos los pasos vamos alograr comprender como podemos conseguir tener una aplicación o proyecto despringboot en un entorno aislado que vamos a poder manejar de una mejor manera tanto en su despliegue como en su mantenimiento.
